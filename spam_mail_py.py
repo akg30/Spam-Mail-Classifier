@@ -9,8 +9,8 @@ import streamlit as st
 import numpy as np
 import pickle as pk
 
-loaded_model=pk.load(open('C:\spam mail classifier/trained_model.sav','rb'))
-tfid_model=pk.load(open('C:\spam mail classifier/tfid_model.sav','rb'))
+loaded_model=pk.load(open('trained_model.sav','rb'))
+tfid_model=pk.load(open('tfid_model.sav','rb'))
 
 def mail(input_mail):
     input_mail_new=[input_mail]
