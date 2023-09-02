@@ -17,9 +17,9 @@ def mail(input_mail):
     input_mail_features=tfid_model.transform(input_mail_new)
     predict=loaded_model.predict(input_mail_features)
     if predict==1:
-        return 'mail is spam'
+        return 'Alert! Mail Seems To Be Spam'
     else:
-        return 'mail is not spam'
+        return 'No Problem Mail Not Seems To Be Spam'
 
 def main():
     st.title('Spam Mail Prediction Using Machine Learning')
